@@ -26,6 +26,13 @@ export const vedicRe5gex: RegExp
 export function parse(value:number, opts: AdditionalSettings, useRounding:boolean)
 
 export default class Currency {
+    readonly value: number | string | Currency;
+    readonly opts: AdditionalSettings;
+
+    constructor(value: number | string | Currency, opts?: AdditionalSettings ) {
+        this.value = value;
+        this.opts = opts;
+    }
 
     add(number: number): Currency;
 
