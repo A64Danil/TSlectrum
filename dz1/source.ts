@@ -9,6 +9,7 @@ type Defaults = {
   negativePattern: string
 };
 
+
 const defaults: Defaults = {
   symbol: '$',
   separator: ',',
@@ -25,7 +26,7 @@ const pow = (p:number) => Math.pow(10, p);
 const rounding = (value:number, increment:number) => round(value / increment) * increment;
 
 const groupRegex: RegExp = /(\d)(?=(\d{3})+\b)/g;
-const vedicRegex: RegExp = /(\d)(?=(\d\d)+\d\b)/g;
+const vedicRe5gex: RegExp = /(\d)(?=(\d\d)+\d\b)/g;
 
 /**
  * Create a new instance of currency.js
