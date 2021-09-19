@@ -29,10 +29,7 @@ export default class Currency {
     readonly value: number | string | Currency;
     readonly opts: AdditionalSettings;
 
-    constructor(value: number | string | Currency, opts?: AdditionalSettings ) {
-        this.value = value;
-        this.opts = opts;
-    }
+    constructor(value: number | string | Currency, opts?: AdditionalSettings )
 
     add(number: number): Currency;
 
